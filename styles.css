@@ -1,1 +1,38 @@
-/* Placeholder: Full styles for enhanced BuzzRouteLA site */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #111;
+  color: #f0f0f0;
+}
+a { color: #f6c90e; text-decoration: none; }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1e1e;
+  padding: 10px 20px;
+}
+.logo img { height: 50px; }
+.nav-links { list-style: none; display: flex; gap: 20px; }
+.nav-links li { display: inline; }
+.hero {
+  background: linear-gradient(to right, #1e1e1e, #333);
+  text-align: center;
+  padding: 60px 20px;
+}
+.hero h1 { font-size: 3em; }
+.routes, .specials, .events, .rewards {
+  padding: 40px 20px;
+}
+.route-card {
+  background: #222;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e1e1e;
+  color: #aaa;
+}
