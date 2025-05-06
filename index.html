@@ -2,32 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BuzzRouteLA - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuzzRouteLA</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="BuzzRouteLA Logo" class="logo" />
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <img src="images/buzzroute-logo.png" alt="BuzzRoute Logo" />
+    </a>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
+      <ul class="nav-links">
         <li><a href="routes.html">Routes</a></li>
         <li><a href="specials.html">Drink Specials</a></li>
-        <li><a href="map.html">Map</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <section class="hero">
-      <h1>Welcome to BuzzRouteLA</h1>
-      <p>Your ultimate guide to bar hopping in Los Angeles with curated drink specials and optimized routes.</p>
-      <a href="routes.html" class="btn">Explore Routes</a>
-    </section>
-  </main>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to BuzzRouteLA</h1>
+    <p>Your ultimate guide to bar hopping, drink deals, and buzzing nights in LA.</p>
+    <a href="routes.html" class="btn-primary">Explore Routes</a>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="feature-box">
+      <h2>Curated Bar Routes</h2>
+      <p>Discover optimized paths to hit the best bars, save time, and avoid backtracking.</p>
+    </div>
+    <div class="feature-box">
+      <h2>Drink Specials</h2>
+      <p>Stay updated on the best happy hours, exclusive deals, and limited-time offers.</p>
+    </div>
+    <div class="feature-box">
+      <h2>Local Favorites</h2>
+      <p>See what’s trending in your area with crowd-picked bar lists updated weekly.</p>
+    </div>
+  </section>
+
+  <!-- Live Map Preview -->
+  <section class="map-preview">
+    <h2>Explore the Buzz</h2>
+    <p>Preview tonight’s top bar route across Los Angeles.</p>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d423286.27451086876!2d-118.6919209!3d34.0201613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb13c4bcd3cb%3A0xd979de4484aafc93!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1617202195644!5m2!1sen!2sus"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Top Bars Carousel -->
+  <section class="carousel">
+    <h2>Hot Bars This Week</h2>
+    <div class="carousel-container">
+      <div class="carousel-slide">
+        <div class="bar-card">Barcade Downtown</div>
+        <div class="bar-card">Mama Shelter Rooftop</div>
+        <div class="bar-card">No Vacancy</div>
+        <div class="bar-card">The Varnish</div>
+        <div class="bar-card">The Roger Room</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 BuzzRouteLA. All rights reserved.</p>
+    <p>© 2025 BuzzRouteLA. All rights reserved.</p>
+    <p>
+      Follow us:
+      <a href="#">Instagram</a> |
+      <a href="#">TikTok</a> |
+      <a href="#">Contact</a>
+    </p>
   </footer>
+
 </body>
 </html>
