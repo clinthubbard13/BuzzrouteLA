@@ -3,85 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Drink Specials | BuzzRouteLA</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header, footer {
-      background-color: #111;
-      color: white;
-      padding: 1rem 2rem;
-    }
-    .logo img {
-      height: 40px;
-      margin-right: 10px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    .card {
-      background: white;
-      padding: 1rem;
-      border-radius: 6px;
-      margin-bottom: 1rem;
-      box-shadow: 0 0 6px rgba(0,0,0,0.1);
-    }
-    .card h3 {
-      margin-top: 0;
-      color: #dd2476;
-    }
-  </style>
+  <title>BuzzRouteLA - Drink Specials</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <div class="logo" style="display: flex; align-items: center;">
-      <img src="https://clinthubbard13.github.io/BuzzrouteLA/logo.png" alt="BuzzRouteLA Logo">
-      <h1 style="margin: 0; font-size: 1.5rem;">BuzzRouteLA</h1>
-    </div>
+    <img src="logo.png" alt="BuzzRouteLA Logo" class="logo" />
     <nav>
-      <a href="./index.html">Home</a>
-      <a href="./routes.html">Routes</a>
-      <a href="./specials.html">Specials</a>
-      <a href="./map.html">Map</a>
-      <a href="./contact.html">Contact</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="routes.html">Routes</a></li>
+        <li><a href="specials.html" class="active">Drink Specials</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
-
-  <section class="section">
-    <h2>This Week’s Drink Specials</h2>
-
-    <div class="card">
-      <h3>Thirsty Crow – Silver Lake</h3>
-      <p>$5 Old Fashioneds on Wednesdays</p>
-    </div>
-
-    <div class="card">
-      <h3>Perch – Downtown LA</h3>
-      <p>Happy Hour 4–6pm, $6 wine & $4 beers</p>
-    </div>
-
-    <div class="card">
-      <h3>Library Alehouse – Santa Monica</h3>
-      <p>Sunday beer flights for $10</p>
-    </div>
-  </section>
-
+  <main>
+    <h1>Weekly Drink Specials</h1>
+    <ul class="specials-list">
+      <li><strong>Mondays:</strong> Half-off Margaritas @ El Tejano</li>
+      <li><strong>Wednesdays:</strong> $3 Drafts @ Barney's Beanery</li>
+      <li><strong>Fridays:</strong> 2-for-1 Cocktails @ The Misfit Bar</li>
+    </ul>
+  </main>
   <footer>
-    BuzzRouteLA © 2025 | Cheers to great deals
+    <p>&copy; 2025 BuzzRouteLA. All rights reserved.</p>
   </footer>
 </body>
 </html>

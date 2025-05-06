@@ -3,198 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BuzzRouteLA</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-
-    header {
-      background-color: #111;
-      color: white;
-      padding: 0.5rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-    }
-
-    .logo img {
-      height: 40px;
-      margin-right: 10px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .hero {
-      background: linear-gradient(to right, #ff512f, #dd2476);
-      color: white;
-      padding: 3rem 2rem;
-      text-align: center;
-    }
-
-    .section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .section h3 {
-      color: #dd2476;
-      border-bottom: 2px solid #ff512f;
-      padding-bottom: 0.5rem;
-    }
-
-    .card {
-      background: white;
-      padding: 1rem;
-      border-radius: 6px;
-      margin: 1rem 0;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    }
-
-    .map-container {
-      border-radius: 6px;
-      overflow: hidden;
-      margin-top: 1rem;
-    }
-
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: none;
-    }
-
-    .signup {
-      background-color: white;
-      padding: 1rem;
-      border-radius: 6px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    }
-
-    input[type="email"] {
-      padding: 0.5rem;
-      width: 70%;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-      margin-right: 10px;
-    }
-
-    button {
-      padding: 0.5rem 1rem;
-      border: none;
-      background-color: #ff512f;
-      color: white;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    footer {
-      background-color: #111;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-
-    @media (max-width: 600px) {
-      nav a {
-        margin-left: 10px;
-        font-size: 0.9rem;
-      }
-
-      input[type="email"] {
-        width: 100%;
-        margin-bottom: 0.5rem;
-      }
-
-      button {
-        width: 100%;
-      }
-    }
-  </style>
+  <title>BuzzRouteLA - Home</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
   <header>
-    <div class="logo">
-      <img src="https://clinthubbard13.github.io/BuzzrouteLA/logo.png" alt="BuzzRouteLA Logo">
-      <h1 style="margin: 0; font-size: 1.5rem;">BuzzRouteLA</h1>
-    </div>
+    <img src="logo.png" alt="BuzzRouteLA Logo" class="logo" />
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Routes</a>
-      <a href="#">Specials</a>
-      <a href="#">Map</a>
-      <a href="#">Contact</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="routes.html">Routes</a></li>
+        <li><a href="specials.html">Drink Specials</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
-
-  <div class="hero">
-    <h2>Plan the Perfect Night Out in Los Angeles</h2>
-    <p>Discover bar routes, drink specials, and insider tips across LA's hottest neighborhoods.</p>
-  </div>
-
-  <section class="section">
-    <h3>Top Bar Routes</h3>
-    <div class="card">
-      <strong>Hollywood Hops</strong><br/>
-      5 bars, 1 mile walk — cocktails, karaoke, and rooftop views
-    </div>
-    <div class="card">
-      <strong>Downtown Dive Tour</strong><br/>
-      Hidden gems and budget drinks in DTLA
-    </div>
-    <div class="card">
-      <strong>Santa Monica Sunset Crawl</strong><br/>
-      Beachside drinks and breezy patios
-    </div>
-  </section>
-
-  <section class="section">
-    <h3>Drink Specials Tonight</h3>
-    <div class="card">Thirsty Crow: $5 Old Fashioneds until 9pm</div>
-    <div class="card">Mama Shelter Rooftop: 2-for-1 Mojitos, 5–7pm</div>
-    <div class="card">Davey Wayne’s: Free entry before 8pm</div>
-  </section>
-
-  <section class="section">
-    <h3>Map of LA Bar Hotspots</h3>
-    <div class="map-container">
-      <iframe src="https://www.google.com/maps/d/embed?mid=1F-RAn3zjq4_v7_g2I4C_U6vM5RrvlNU&ehbc=2E312F"></iframe>
-    </div>
-  </section>
-
-  <section class="section">
-    <h3>Stay in the Loop</h3>
-    <div class="signup">
-      <p>Sign up to get weekly updates on the best bar routes and drink specials in LA.</p>
-      <form>
-        <input type="email" placeholder="Your email address" required>
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
-  </section>
-
+  <main>
+    <section class="hero">
+      <h1>Welcome to BuzzRouteLA</h1>
+      <p>Your ultimate guide to bar hopping in Los Angeles with curated drink specials and optimized routes.</p>
+      <a href="routes.html" class="btn">Explore Routes</a>
+    </section>
+  </main>
   <footer>
-    BuzzRouteLA © 2025 | Contact | Instagram | Terms
+    <p>&copy; 2025 BuzzRouteLA. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
